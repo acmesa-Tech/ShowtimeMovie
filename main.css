@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+header {
+    background-color: #252525;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu-icon {
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.page-title {
+    margin: 0;
+    font-size: 20px;
+}
+
+.side-drawer {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s;
+    z-index: 9999;
+}
+
+.side-drawer ul {
+    list-style: none;
+    padding: 0;
+    margin: 60px 0;
+}
+
+.side-drawer li  {
+    padding: 15px 10px;
+    border-bottom: 1px solid #444;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.drawer > a{
+    display: flex;
+    padding: 16px 16px;
+    align-items: center;
+    gap: 8px;
+}
+
+.side-drawer li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.side-drawer li.active {
+    background-color: #555;
+    cursor: default;
+}
+
+.side-drawer[data-open="true"] {
+    left: 0px;
+}
+
+.side-drawer.open {
+    left: 0;
+}
+
+.search-section {
+    margin-top: 60px;
+    padding: 20px;
+    text-align: center;
+}
+
+#search-text {
+    width: 50%;
+    padding: 8px;
+}
+
+.search-buttons {
+    margin-top: 10px;
+}
+
+.search-button {
+    text-decoration: none;
+    background: #444;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.home-sections {
+    padding: 100px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    width: 180px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 1s ease;
+}
+
+.mask[data-open="true"] {
+    background-color: rgba(0, 0, 0, .20);
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width: 600px) {
+    .menu-icon {
+        display: block;
+    }
+    .side-drawer {
+        width: 200px;
+    }
+    #search-text {
+        width: 80%;
+    }
+}
