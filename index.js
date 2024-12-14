@@ -9,6 +9,7 @@ const sidebarLinks = document.querySelectorAll('.sidebar li');
 const contentSections = document.querySelectorAll('.content .section');
 
 const searchInput = document.getElementById("search-text");
+const allButton = document.getElementById("all-button");
 const movieButton = document.getElementById("movie-button");
 const tvButton = document.getElementById("tv-button");
 const personButton = document.getElementById("person-button");
@@ -22,6 +23,7 @@ function searchEventListeners(element) {
     })
 }
 
+searchEventListeners(allButton);
 searchEventListeners(movieButton);
 searchEventListeners(tvButton);
 searchEventListeners(personButton);

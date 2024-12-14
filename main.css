@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: bodrer-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -187,18 +193,31 @@ header {
     }
 }
 
-#person-credits {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
 #movie-credits {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    /*gap: 10px;*/
+    gap: 1rem;
+    margin-inline: auto;
     justify-content: center;
+}
+
+#movie-credits img {
+    flex: 1;
+   /* width: 100px;
+    height: 150px;*/
+    width: 100%;
+    height: 150px;
+    cursor: pointer;
+    overflow: hidden;
+    /*background-color: #5985E1; 
+     object-fit: cover;*/
+     transition: flex .5s easy-in-out
+    }
+
+#movie-credits img:hover {
+    flex: 2.5;
+    width: 100px;
 }
 
 #serie-credits {
@@ -207,3 +226,51 @@ header {
     gap: 10px;
     justify-content: center;
 }
+
+#serie-credits img {
+     transition: flex .5s easy-in-out
+    }
+
+#serie-credits img:hover {
+    background-size: cover;
+    filter: blur(5px);
+}
+
+#person-credits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#person-credits img {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+
+#person-credits img:hover {
+    opacity: 0.2;
+}
+
+@keyframes FadeInOut {
+    0% {opacity:1;}
+    25% {opacity:.75;}
+    50% {opacity:.5;}
+    100% {opacity:0;}
+  }
+
+/*
+#movie-credits img:hover {
+    animation: spiningshadown 3s infinite linear;
+}
+#person-credits img.top {
+-webkit-animation-name: FadeInOut;
+-webkit-animation-timing-function: ease-in-out;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-duration: 10s;
+-webkit-animation-direction: alternate;
+}
+*/
