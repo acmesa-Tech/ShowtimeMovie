@@ -94,7 +94,7 @@ function cardClick(item, type) {
     if (type === 'movie') {
         window.location.href = `movie.html?id=${item.id}`;
     } else if (type === 'tv') {
-        window.location.href = `series.html?id=${item.id}`;
+        window.location.href = `serie.html?id=${item.id}`;
     } else if (type === 'person') {
         window.location.href = `person.html?id=${item.id}`;
     }

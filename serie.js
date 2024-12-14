@@ -6,7 +6,7 @@ const queryObj = queryStringToJson(window.location.search);
 const seriesId = queryObj.id;
 
 const seriesDetailsDiv = document.getElementById('series-details');
-const seriesCreditsDiv = document.getElementById('series-credits');
+const seriesCreditsDiv = document.getElementById('serie-credits');
 
 async function loadSeries() {
     const details = await tvDetails(seriesId);

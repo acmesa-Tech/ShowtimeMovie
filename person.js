@@ -41,7 +41,7 @@ function displayPersonCredits(credits) {
                 if (item.media_type === 'movie') {
                     window.location.href = `movie.html?id=${item.id}`;
                 } else {
-                    window.location.href = `series.html?id=${item.id}`;
+                    window.location.href = `serie.html?id=${item.id}`;
                 }
             });
 

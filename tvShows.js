@@ -39,7 +39,7 @@ function displayTV(shows) {
         card.addEventListener('mouseout', () => card.style.transform = 'scale(1)');
 
         card.addEventListener('click', () => {
-            window.location.href = `series.html?id=${show.id}`;
+            window.location.href = `serie.html?id=${show.id}`;
         });
 
         card.innerHTML = `
