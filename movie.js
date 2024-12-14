@@ -10,8 +10,8 @@ const nextImgBtn = document.getElementById('next-img');
 let currentImageIndex = 0;
 let imagesArray = [];
 
-document.getElementById('menu-icon').addEventListener('click', () => {
-    document.getElementById('side-drawer').classList.toggle('open');
+document.getElementById('icon-button').addEventListener('click', () => {
+    document.getElementById('drawer').classList.toggle('open');
 });
 
 async function loadMovie() {

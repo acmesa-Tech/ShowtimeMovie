@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Sooubway Sandwiches - TV</title>
+    <title>TV Series</title>
     <link rel="stylesheet" href="main.css">
     <script src="api.js" defer></script>
-    <script src="tvShows.js" defer></script>
+    <script src="tvSeries.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="top-bar">
-            <div class="menu-icon" id="menu-icon">☰</div>
+        <div class="navBar">
+            <div class="icon-button" id="icon-button">☰</div>
             <h1 class="page-title">Television</h1>
         </div>
-        <nav class="side-drawer" id="side-drawer">
+        <nav class="drawer" id="drawer">
             <ul>
                 <li><img src="icons/home-icon.png"><a href="index.html">Home</a></li>
                 <li><img src="icons/movies-icon.png"><a href="movies.html">Movies</a></li>
-                <li class="active"><img src="icons/tvShows-icon.png">TV Shows</li>
+                <li class="active"><img src="icons/tvSeries-icon.png">TV Series</li>
                 <li><img src="icons/people-icon.png"><a href="people.html">People</a></li>
             </ul>
         </nav>
     </header>
-    <main style="margin-top:80px; padding:20px;">
-        <input type="text" id="search-text" placeholder="Search TV shows..."/>
+    <main class="container" style="margin-top:80px; padding:20px;">
+        <input type="text" id="search-text" placeholder="Search TV Series..."/>
         <button id="search-btn">Search</button>
         <div id="tv-container" class="card-container"></div>
         <div id="pagination"></div>

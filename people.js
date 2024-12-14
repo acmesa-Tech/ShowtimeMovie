@@ -1,5 +1,5 @@
-document.getElementById('menu-icon').addEventListener('click', () => {
-    document.getElementById('side-drawer').classList.toggle('open');
+document.getElementById('icon-button').addEventListener('click', () => {
+    document.getElementById('drawer').classList.toggle('open');
 });
 
 const peopleQuery = queryStringToJson(window.location.search).query || '';

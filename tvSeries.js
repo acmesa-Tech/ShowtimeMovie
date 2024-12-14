@@ -1,5 +1,5 @@
-document.getElementById('menu-icon').addEventListener('click', () => {
-    document.getElementById('side-drawer').classList.toggle('open');
+document.getElementById('icon-button').addEventListener('click', () => {
+    document.getElementById('drawer').classList.toggle('open');
 });
 
 const queryObj = queryStringToJson(window.location.search);
@@ -71,7 +71,7 @@ function renderPagination() {
 
 searchBtn.addEventListener('click', () => {
     const q = encodeURIComponent(searchInput.value);
-    window.location.href = `tvShows.html?query=${q}`;
+    window.location.href = `tvSeries.html?query=${q}`;
 });
 
 loadTV(currentPage);

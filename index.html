@@ -9,47 +9,45 @@
     <script src="index.js" defer></script>
 </head>
 <body>
-    <div class="container"></div>
+   <!-- <div class="container"></div> --> 
         <div class="mask" id="mask"></div>
         <header>
-            <div class="top-bar">
-                <div class="menu-icon" id="menu-icon">☰</div>
+            <div class="navBar">
+                <div class="icon-button" id="nav-button">☰</div>
                 <h1 class="page-title">Movies, Series, and TVs Showtime!</h1>
             </div>
+            <nav class="drawer" id="drawer">
+                <ul>
+                    <li><img src="icons/home-icon.png"><a href="index.html">Home</a></li>
+                    <li><img src="icons/movies-icon.png"><a href="movies.html">Movies</a></li>
+                    <li><img src="icons/tvSeries-icon.png"><a href="tvSeries.html">TV Series</a></li>
+                    <li><img src="icons/people-icon.png"><a href="people.html">People</a></li>
+                </ul>
+            </nav>
 
-        <nav class="side-drawer" id="side-drawer">
-            <ul>
-                <li><img src="icons/home-icon.png"><a href="index.html">Home</a></li>
-                <li><img src="icons/movies-icon.png"><a href="movies.html">Movies</a></li>
-                <li><img src="icons/tvShows-icon.png"><a href="tvShows.html">TV Shows</a></li>
-                <li class="active"><img src="icons/people-icon.png">People</li>
-            </ul>
-        </nav>
-
-        <section class="search-section">
-            <h2>Search</h2>
-            <input type="text" id="search-text" placeholder="Search by title, year, or name..."/>
-            <div class="search-buttons">
-                <a class="search-button" id="movie-button" href="movies.html">Movies</a>
-                <a class="search-button" id="tv-button" href="tvShows.html">Television</a>
-                <a class="search-button" id="person-button" href="people.html">People</a>
-            </div>
-        </section>
-
-    </nav>            
-        </header>
-        <main>
-        /*    
             <section class="search-section">
                 <h2>Search</h2>
                 <input type="text" id="search-text" placeholder="Search by title, year, or name..."/>
                 <div class="search-buttons">
                     <a class="search-button" id="movie-button" href="movies.html">Movies</a>
-                    <a class="search-button" id="tv-button" href="tvShows.html">Television</a>
+                    <a class="search-button" id="tv-button" href="tvSeries.html">Television</a>
                     <a class="search-button" id="person-button" href="people.html">People</a>
                 </div>
             </section>
-        */
+        </header>
+        <main class="container">
+            <!-- <main> -->
+            <!--   
+            <section class="search-section">
+                <h2>Search</h2>
+                <input type="text" id="search-text" placeholder="Search by title, year, or name..."/>
+                <div class="search-buttons">
+                    <a class="search-button" id="movie-button" href="movies.html">Movies</a>
+                    <a class="search-button" id="tv-button" href="tvSeries.html">Television</a>
+                    <a class="search-button" id="person-button" href="people.html">People</a>
+                </div>
+            </section>
+         -->
             <section class="home-sections">
                 <h2>Popular Movies</h2>
                 <div class="card-container" id="popular-movies"></div>

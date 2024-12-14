@@ -101,8 +101,8 @@ function cardClick(item, type) {
 }
 
 // Drawer menu
-const menuIcon = document.getElementById('menu-icon');
-const sideDrawer = document.getElementById('side-drawer');
+const menuIcon = document.getElementById('icon-button');
+const sideDrawer = document.getElementById('drawer');
 
 menuIcon.addEventListener('click', () => {
     sideDrawer.classList.toggle('open');
